@@ -1,0 +1,9 @@
+prototype.content:
+    path: '/protojobs'
+    default:
+        _controller: 'Drupal\custom\Controller\CustomController::content'
+        _title : 'Job list'
+    
+    requirements:
+        _permission: 'access content'
+

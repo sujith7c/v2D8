@@ -1,0 +1,68 @@
+{#
+/**
+ * @file
+ * Default view template to display all the fields in a row.
+ *
+ * Available variables:
+ * - view: The view in use.
+ * - fields: A list of fields, each one contains:
+ *   - content: The output of the field.
+ *   - raw: The raw data for the field, if it exists. This is NOT output safe.
+ *   - class: The safe class ID to use.
+ *   - handler: The Views field handler controlling this field.
+ *   - inline: Whether or not the field should be inline.
+ *   - wrapper_element: An HTML element for a wrapper.
+ *   - wrapper_attributes: List of attributes for wrapper element.
+ *   - separator: An optional separator that may appear before a field.
+ *   - label: The field's label text.
+ *   - label_element: An HTML element for a label wrapper.
+ *   - label_attributes: List of attributes for label wrapper.
+ *   - label_suffix: Colon after the label.
+ *   - element_type: An HTML element for the field content.
+ *   - element_attributes: List of attributes for HTML element for field content.
+ *   - has_label_colon: A boolean indicating whether to display a colon after
+ *     the label.
+ *   - element_type: An HTML element for the field content.
+ *   - element_attributes: List of attributes for HTML element for field content.
+ * - row: The raw result from the query, with all data it fetched.
+ *
+ * @see template_preprocess_views_view_fields()
+ *
+ * @ingroup themeable
+ */
+#}
+
+<div class="search-result-wrapper search-result-item">
+    <div class="text-left result-head">
+        {{ fields.title.content }}
+        {{ fields.field_jobs_category_taxonomy.content }}
+    </div>
+    <div class="search-result-teaser">
+        <p>{{ fields.body.content }}</p>
+    </div>
+    <div class="search-result-field-wrapper">
+        <div class="search-result-nationlity d-inline-block p-3">
+            <span class="sub-title label">
+              {{ fields.field_jobs_nationalilty.label }}
+            </span>
+              {{ fields.field_jobs_nationalilty.content }}
+        </div>
+        <div class="search-result-salary d-inline-block p-3">
+            <span class="label">
+              {{ fields.field_jobs_salary.label }}
+            </span>
+              {{ fields.field_jobs_salary.content }}
+        </div>
+        <div class="search-result-date d-inline-block p-3">
+            <span class="label">
+              {{ fields.field_job_expiry_date.label }}
+            </span>
+              {{ fields.field_job_expiry_date.content }}
+        </div>
+    </div>
+    <div class="search-result-apply-btn center-block">
+        <div id="search-apply-falsh" class="search-apply-btn center-block">
+            <a href="#" class="apply-offer-link">APPLY AND OFFER</a>
+        </div>
+    </div>
+</div>

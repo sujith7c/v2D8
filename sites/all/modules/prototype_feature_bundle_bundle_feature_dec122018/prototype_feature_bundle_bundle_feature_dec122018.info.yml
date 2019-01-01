@@ -1,0 +1,4 @@
+name: 'Bundle Feature Dec122018'
+type: module
+core: 8.x
+package: prototype-feature-bundle

@@ -1,0 +1,20 @@
+name: prototype
+type: theme
+description: 'Prototype is a Bootstrap based theme'
+core: 8.x
+libraries:
+    - prototype/global-styling
+base theme: bootstrap_barrio
+regions:
+    header_flash: 'Header Flash '
+    header :    'Header'
+    header_fontpage : 'Front page Header'
+    front_search_box : 'Font page search filter box'
+    breadcrumb: 'Breadcrumb'
+    content : 'Content area'
+    sidebar_first: 'Sidebar first'
+    sidebar_second: 'Sidebar second'
+    footer : 'Footer'
+    footer_copyright : 'Footer Copyright Area'
+
+
