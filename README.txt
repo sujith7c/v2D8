@@ -8,6 +8,7 @@ CONTENTS OF THIS FILE
  * Appearance
  * Developing for Drupal
  * More information
+ * V2D8 installation doc
 
 ABOUT DRUPAL
 ------------
@@ -137,3 +138,38 @@ MORE INFORMATION
  * For information about the wide range of available support options, visit
    https://www.drupal.org and click on Community and Support in the top or
    bottom navigation.
+
+
+V2D8 installation doc
+------------------------
+Please install the below modules
+
+bootstrap_library
+config_update
+devel
+features
+restui
+
+Bootstrap librarary  must be downloaded in libraries folder
+
+Once you done the above steps enable the custom theme prototype
+
+To import the config backup provide in the IntitialConfig folder , set the UUID to below using Drush
+
+705ed7d8-5afd-4e0a-a590-1f9d145d7456
+
+#drush cset system.site uuid 705ed7d8-5afd-4e0a-a590-1f9d145d7456
+
+More details and debug help is provided in Doc Directory
+
+Please create two Taxonomy terms under Job Type Categroy
+    1) Developer 
+    2) Management
+
+Now you can start creating content themed content is made avialable int alljobs path
+----------------------------
+
+
+
+
+
